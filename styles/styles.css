@@ -200,9 +200,9 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
   color: #000000;
   margin: 0;
+  margin-bottom: 25px;
 }
 
 .bunner-span {
@@ -212,7 +212,6 @@ body {
 .bunner-heading {
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
   font-weight: 400;
   margin: 0;
 }
@@ -237,7 +236,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
   text-align: center;
   box-sizing: border-box;
-  padding: 103px 85px;
+  padding: 102px 85px;
   margin: 0;
 }
 
@@ -296,6 +295,9 @@ body {
 }
 
 /*services*/
+.services-paragraph {
+  margin-bottom: 20px;
+}
 
 .services-heading {
   margin-bottom: 30px;
@@ -305,6 +307,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
+}
+
+.services-span {
+  display: block;
 }
 
 .services-wrapper:nth-child(2) {
@@ -347,20 +353,22 @@ body {
 }
 
 .services-title {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
   padding-top: 64px;
   padding-bottom: 64px;
+  text-align: center;
+}
+
+.services-text {
+  margin-bottom: 20px;
 }
 
 /*search*/
 .main-search {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  text-align: center;
   padding-top: 96px;
   padding-bottom: 96px;
 }
@@ -374,6 +382,8 @@ body {
 }
 
 .button-search {
+  display: block;
+  margin: 0 auto;
   font-size: 20px;
   line-height: 36px;
 }
@@ -404,6 +414,9 @@ body {
 .subscription-text {
   margin-bottom: 54px;
   text-align: center;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
 }
 
 .subscription-form {
