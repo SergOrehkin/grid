@@ -32,15 +32,17 @@ body {
   background: #f2f2f2;
 }
 
-.main-wrapper{
-    flex-grow: 1;
+.main-wrapper {
+  flex-grow: 1;
 }
+
 .main-container {
   display: flex;
   flex-direction: column;
   width: 1200px;
   margin: 0 auto;
-  background-color: #ffffff;
+  /* basic/white */
+  background: #ffffff;
 }
 
 .row {
@@ -183,11 +185,14 @@ body {
 }
 
 .bunner-wrapper {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
-  padding: 69px 70px;
+  gap: 25px; */
+  padding-top: 69px;
+  padding-bottom: 69px;
+  text-align: center;
+  margin-bottom: 21px;
 }
 
 .bunner-text {
