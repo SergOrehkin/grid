@@ -33,15 +33,18 @@ body {
 }
 
 .main-wrapper {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  display: grid;
+  grid-template-rows: 485px auto 631px 406px;
 }
 
 .main-container {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-rows: 64px 2938px 535px;
   width: 1200px;
   margin: 0 auto;
-  /* basic/white */
   background: #ffffff;
 }
 
@@ -219,13 +222,38 @@ body {
 /*advantages*/
 
 .advantages-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 1200px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-areas:
+  "origin origin origin"
+  "real road tourists"
+  "devil devil devil";
+}
+
+.card-origin {
+  grid-area: origin;
+}
+
+.card-square {
+  grid-area: real;
+}
+
+.card-road {
+  grid-area: road;
+}
+
+.card-tourists {
+  grid-area: tourists;
+}
+.card-devil {
+  grid-area: devil;
 }
 
 .advantages-pic {
-  display: flex;
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .advantages-card {
@@ -295,6 +323,14 @@ body {
 }
 
 /*services*/
+
+.main-services{
+  display: grid;
+  grid-template-rows: 248px 385px;
+}
+
+
+
 .services-paragraph {
   margin-bottom: 20px;
 }
@@ -304,9 +340,13 @@ body {
 }
 
 .services-list {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  width: 1200px;
+  width: 1200px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
 }
 
 .services-span {
@@ -536,6 +576,8 @@ body {
 .filter-wrapper {
   display: flex;
   align-items: flex-start;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
 }
 
 .filter-title {
@@ -555,6 +597,7 @@ fieldset {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  /* display: grid; */
   gap: 16px;
   margin: 0;
   padding: 0;
